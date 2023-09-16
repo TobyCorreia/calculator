@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #aaa; /* Dark gray background color */
+    border: solid black 1px;
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+    margin: auto; /* Center horizontally */
+    border-radius: 15px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Align text to the right */
+    background-color: #f0f0f0; /* Add a background color */
+    border: solid black 1px;
+    width: 100%;
+    height: 110px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#firstRow, #secondRow {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#firstRow {
+    font-size: 15px; /* Adjust font size as needed */
+}
+
+#secondRow {
+    font-size: 30px; /* Adjust font size as needed */
+}
+
+button {
+    border: solid black 1px;
+    font-size: 16px;
+}
+
+.clearDelete {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    height: 70px;
+}
+
+.clearDelete, button {
+    width: 100%;
+}
+
+.numbersOperators {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.numbersOperators button {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    height: 50px;
+}
